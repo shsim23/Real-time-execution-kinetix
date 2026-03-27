@@ -1,0 +1,13 @@
+returned_episode_lengths,returned_episode_returns,returned_episode_solved,delay,execute_horizon,method,level
+35.93701,0.6010742,0.6953125,2,3,naive,worlds/l/grasp_easy.json
+168.14062,0.43066406,0.41357422,2,3,naive,worlds/l/catapult.json
+55.178223,0.94921875,0.9663086,2,3,naive,worlds/l/cartpole_thrust.json
+52.67334,0.9501953,0.92333984,2,3,naive,worlds/l/hard_lunar_lander.json
+85.4292,0.9682617,0.8383789,2,3,naive,worlds/l/mjc_half_cheetah.json
+229.14502,0.6230469,0.54833984,2,3,naive,worlds/l/mjc_swimmer.json
+219.60498,0.29345703,0.28955078,2,3,naive,worlds/l/mjc_walker.json
+90.302246,0.8203125,0.8535156,2,3,naive,worlds/l/h17_unicycle.json
+49.012695,0.99121094,0.94677734,2,3,naive,worlds/l/chain_lander.json
+67.89844,0.2524414,0.4765625,2,3,naive,worlds/l/catcher_v3.json
+168.5752,0.70410156,0.7680664,2,3,naive,worlds/l/trampoline.json
+77.21338,0.8198242,0.81884766,2,3,naive,worlds/l/car_launch.json
