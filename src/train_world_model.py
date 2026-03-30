@@ -231,9 +231,16 @@ def main(config: Config):
         info["grad_norm"] = grad_norm
         return info
 
+    # Determine run name from level paths and history size
+    if len(config.level_paths) == 1:
+        task_name = config.level_paths[0].replace("/", "_").replace(".json", "")
+        run_name = f"h{model_config.history_size}_{task_name}"
+    else:
+        run_name = f"h{model_config.history_size}_multi_{len(config.level_paths)}tasks"
+
     # Wandb init
-    wandb.init(project=WANDB_PROJECT, config=dataclasses.asdict(config))
-    log_dir = LOG_DIR / wandb.run.name
+    wandb.init(project=WANDB_PROJECT, name=run_name, config=dataclasses.asdict(config))
+    log_dir = LOG_DIR / run_name
     log_dir.mkdir(parents=True, exist_ok=True)
 
     # Merge all level data for mixed training
